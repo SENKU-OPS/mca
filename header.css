@@ -1,0 +1,176 @@
+body {
+  --transition-time: 300ms;
+  --transition-style: ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0rem 2rem;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4rem;
+  background: var(--black-color-900);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  color: var(--white-color-600);
+  font-family: "Hanalei";
+  letter-spacing: .5rem;
+  border: 2px dashed var(--white-color-600);
+  padding: 0rem 1rem;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30vh;
+}
+
+.header__nav-items {
+  padding: .5rem 0rem;
+  border: 2px dashed var(--white-color-600);
+  margin-bottom: 1rem;
+}
+
+.header__nav-item--active {
+  margin: 0;
+}
+
+.header__nav-links {
+  color: var(--white-color-600);
+  font-weight: 600;
+  padding: .5rem 1rem;
+  -webkit-transition: background-color var(--transition-time) var(--transition-style), color var(--transition-time) var(--transition-style);
+  transition: background-color var(--transition-time) var(--transition-style), color var(--transition-time) var(--transition-style);
+}
+
+.header__nav-links:hover {
+  background-color: var(--white-color-600);
+  color: var(--black-color-900);
+}
+
+.header__nav {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  background: var(--black-color-900);
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: -webkit-transform var(--transition-time) var(--transition-style);
+  transition: -webkit-transform var(--transition-time) var(--transition-style);
+  transition: transform var(--transition-time) var(--transition-style);
+  transition: transform var(--transition-time) var(--transition-style), -webkit-transform var(--transition-time) var(--transition-style);
+}
+
+.header__toggle-nav-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.header__bars {
+  height: 3px;
+  width: 2rem;
+  background-color: var(--white-color-600);
+  margin-bottom: 5px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform var(--transition-time) var(--transition-style);
+  transition: -webkit-transform var(--transition-time) var(--transition-style);
+  transition: transform var(--transition-time) var(--transition-style);
+  transition: transform var(--transition-time) var(--transition-style), -webkit-transform var(--transition-time) var(--transition-style);
+}
+
+.header__bar1 {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.header__bar2 {
+  -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+}
+
+.header__bar3 {
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+  margin: 0;
+}
+
+.toggle-nav {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.toggle-bar1 {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+}
+
+.toggle-bar2 {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+}
+
+.toggle-bar3 {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=header.css.map */
