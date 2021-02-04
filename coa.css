@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.coa-intro {
+  background-color: var(--blue-color-900);
+  width: 100vw;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 306px;
+      grid-template-columns: 306px;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .coa-intro {
+    -ms-grid-columns: 850px;
+        grid-template-columns: 850px;
+    -ms-grid-rows: auto 300px auto;
+        grid-template-rows: auto 300px auto;
+    grid-auto-rows: auto;
+  }
+  .coa-intro__img {
+    width: 850px;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=coa.css.map */

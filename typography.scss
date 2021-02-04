@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei&family=Montserrat:wght@400;600;700;800&display=swap");
+body {
+    font-family: var(--font-family);
+}
+
+.intro-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white-color-800);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--white-color-800);
+}
+
+.intro-long-text {
+    line-height: 30px;
+    color: var(--white-color-600);
+}

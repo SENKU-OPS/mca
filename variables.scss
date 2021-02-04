@@ -1,0 +1,14 @@
+body {
+    --blue-color-900: #323944;
+    --black-color-900: rgb(12, 12, 12);
+    --black-color-100: rgba(32, 32, 32, 0.233);
+    --white-color-600: rgba(238, 238, 238, 0.714);
+    --white-color-800: #eeeeee;
+    --white-color-400: #dddddd;
+    --white-color-300: #cccccc;
+    --font-family: "Montserrat";
+    --transition-time: 300ms;
+    --transition-style: ease;
+    color: var(--white-color-800);
+    font-family: var(--font-family);
+}
