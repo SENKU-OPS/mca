@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+#main-heading {
+    display: none;
+}
+
+.coa-intro {
+    background-color: var(--blue-color-900);
+    width: 100vw;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 306px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+@media only screen and (min-width:900px) {
+    .coa-intro {
+        grid-template-columns: 850px;
+        grid-template-rows: auto 300px auto;
+        grid-auto-rows: auto;
+        &__img {
+            width: 850px;
+            height: 300px;
+        }
+    }
+}
